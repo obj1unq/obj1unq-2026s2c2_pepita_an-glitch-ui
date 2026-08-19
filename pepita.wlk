@@ -76,17 +76,24 @@ object rebeca {
 }
 
 /*
+[X]    -  mal/corregido
+[X-]   -  mal pero no tan mal 
+[O]    -  sin correcciones/bien
+
 ¿Qué métodos son consultas y cuáles son órdenes?
 -Consultas: energiaQueAporta(), estaCansado(), escala(), cenas()
 Ordenes: comer(alimento), volar(distancia), descansar(), madurar(), cambiarAvePor(nuevaAve), alimentarCon(alimento)
 
 En cuanto a cada situación que manifiesta polimorfismo:
 a. ¿Cuál es el mensaje polimórfico y quién lo envía?
--El mensaje polimorfico es energiaQueAporta() un alimento, como la manzana o el alpiste, que quien lo envía es el objeto pepita.
+-El mensaje polimorfico es energiaQueAporta() un alimento, como la manzana o el alpiste, que quien lo envía es el objeto pepita.     [O]
 
 b. Considerando los objetos que entienden el mensaje polimórfico ¿Qué nombre le pondrías al tipo polimórfico?
--energiaQueAporta(?
+-energiaQueAporta(?   [X]
+-El nombre del tipo polimórfico sería Alimento, para que entienda el mensaje general 'energiaQueAporta()'.
 
 d. ¿Qué objetos implementan ese tipo?
-- Los objetos que lo implementarian son aquellos que son alimentos, aunque puede ser implementado por otros objetos que usen el mismo tipo, aunque el nombre no corresponda.
+- Los objetos que lo implementarian son aquellos que son alimentos, aunque puede ser implementado por otros objetos que usen el mismo tipo, aunque el nombre no corresponda.    [X-]
+En este caso, los objetos que implementan ese tipo son manzana y alpiste. Junto con otro polimorfismo en el objeto 'ave' que implementa el método comer(alimento), implentado por el objeto 
+'rebeca' y usado por los objetos 'pepita' y 'pepon'.
 */
